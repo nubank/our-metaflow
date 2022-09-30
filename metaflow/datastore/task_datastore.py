@@ -1,6 +1,6 @@
 from collections import defaultdict
 import json
-import pickle
+import cloudpickle as pickle
 import sys
 import time
 
