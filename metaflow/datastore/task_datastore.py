@@ -259,6 +259,11 @@ class TaskDataStore(object):
 
         def pickle_iter():
             for name, obj in artifacts_iter:
+                print(name, obj)
+                if name == "predict_fn":
+                    import pdb
+
+                    pdb.set_trace()
                 do_v4 = (
                     force_v4 and force_v4
                     if isinstance(force_v4, bool)
